@@ -9,6 +9,10 @@ main {
     padding: 20px;
 }
 
+#titulo {
+    color: white;
+}
+
 #animais {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -41,4 +45,12 @@ main {
     color: rgba(255, 255, 255, 0.678);
     font-size: 16px;
     font-weight: 100px;
+}
+
+.info-animal a {
+    color: white;
+}
+
+.info-animal a:hover {
+    color: #ffaa00;
 }
