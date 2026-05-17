@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="cadastro.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="container"> 
+        <h1>Cadastro</h1>
+        <div class="card-cadastro">
+            <div class="box2">
+            <form>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">@Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <label for="genero">Gênero:</label>
+                <select id="genero" name="genero">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">VIADO</option>
+                </select>
+
+                <label for="nascimento">Data de nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento" min="1900-01-01" max="2026-05-17" required>
+
+
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+        </div>
+    </main>
+</body>
