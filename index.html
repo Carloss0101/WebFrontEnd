@@ -1,102 +1,144 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animais.css">
     <title>Home</title>
 </head>
+
 <body>
     <header>
         <div class="menu-container">
             <div class="menu-subcontainer">
-                <nav>
+                <nav id="header-nav">
                     <a href="pages\animais.html">Animais</a>
                     <a href=""> Contribuidores</a>
                     <a href="#contato">Contato</a>
-                    <div class="login-container">
-                        <div class="login-subcontainer">
-                            <a href="pages/login.html">Login</a>
-                            <a href="pages/cadastro.html">Cadastro</a>
-                        </div>
-                    </div>
                 </nav>
             </div>
         </div>
-        <main class="main-container">
-            <div id="introducao">
+    </header>
+    <main class="main-container">
+        <div id="introducao">
+            <div id="introducao-texto">
                 <h2>Quem somos nós</h2>
                 <p class="paragrafo-texto">
                     Somos a &lt;nome&gt;, fundada em &lt;ano&gt; com o objetivo
                     de ajudar animais que necessitam de carinho e amor.
                 </p>
                 <p class="paragrafo-texto">
-                    A &lt;nome&gt; dedicada ao acolhimento e proteção em Cornélio 
-                    Procópio e região tem como missão oferecer abrigo, cuidado e uma nova 
-                    oportunidade para animais em situação de abandono, maus-tratos 
-                    ou vulnerabilidade. Atuando com responsabilidade, amor e compromisso 
-                    com a causa animal, a instituição busca promover o resgate, a 
-                    recuperação e a adoção consciente dos animais acolhidos, além de conscientizar 
-                    a comunidade sobre a importância do respeito, da posse responsável e da 
-                    proteção aos animais. Por meio do apoio de voluntários, parceiros e 
-                    doações, a &lt;nome&gt; trabalha diariamente para transformar vidas e construir 
+                    A &lt;nome&gt; dedicada ao acolhimento e proteção em Cornélio
+                    Procópio e região tem como missão oferecer abrigo, cuidado e uma nova
+                    oportunidade para animais em situação de abandono, maus-tratos
+                    ou vulnerabilidade. Atuando com responsabilidade, amor e compromisso
+                    com a causa animal, a instituição busca promover o resgate, a
+                    recuperação e a adoção consciente dos animais acolhidos, além de conscientizar
+                    a comunidade sobre a importância do respeito, da posse responsável e da
+                    proteção aos animais. Por meio do apoio de voluntários, parceiros e
+                    doações, a &lt;nome&gt; trabalha diariamente para transformar vidas e construir
                     um futuro mais digno para cada animal resgatado.
                 </p>
             </div>
-            <div id="formas-de-ajuda">
-                <h2>Como você pode ajudar</h2>
-                <dl>
-                    <dt>Doação</dt>
-                    <dd>
-                        <p class="paragrafo-texto">
-                            Todas as contribuições serão convertidas em melhorias
-                            que possam auxiliar no nosso trabalho de acolhimento
-                            e cuidado dos amigos que necessitam! Sinta-se à vontade
-                            para doar o quanto preferir, e se caso não puder doar,
-                            há diversas outras maneiras de ajudar nosso trabalho.
-                            <br>
-                            Insumos para auxílio no nosso trabalho também são de 
-                            grande importância! Alimento e meios facilitadores 
-                            são sempre bem vindos. 
-                        </p>
-                    </dd>
-                    <dt>Adoção</dt>
-                    <dd>
-                        <p class="paragrafo-texto">
-                            Além de acolher e cuidar, quando nossos amigos ficam
-                            saudáveis, é possível fornecer uma nova casa que possa
-                            dar amor e carinho! Para que a segurança dos animais
-                            resgatados possa ser assegurada, qualquer interesse
-                            em adotar um bichinho será precedido de uma avaliação
-                            que medirá o quão preparado o possível lar está.
-                        </p>
-                    </dd>
-                    <dt>Divulgação</dt>
-                    <dd>
-                        <p class="paragrafo-texto">
-                            Divulgar nosso trabalho por meio das redes sociais e
-                            outros meios também é de grande importância. Isso 
-                            possibilita que alcançemos mais animais necessitados
-                            além de abrir portas para possíveis doadores e pessoas
-                            interessadas em adotar. Somos muito ativos nas redes 
-                            sociais, que é nosso principal meio de divulgação.
-                            Sinta-se à vontade para nos seguir.
-                        </p>
-                    </dd>
-                </dl>
+
+            <img src="images/cachorro-introducao.jpg" alt="Imagem Cachorro para doação">
+        </div>
+        <div id="formas-de-ajuda">
+            <h2>Como você pode ajudar</h2>
+
+            <div class="ajuda-container">
+
+                <div class="ajuda-item">
+                    <h3>Adoção</h3>
+                    <p>
+                        Após o cuidado e recuperação, nossos animais estão
+                        prontos para encontrar um novo lar. A adoção é feita
+                        com responsabilidade, garantindo que cada animal vá
+                        para um ambiente seguro e preparado.
+                    </p>
+                </div>
+
+                <div class="ajuda-item">
+                    <h3>Doação</h3>
+                    <p>
+                        Todas as contribuições serão convertidas em melhorias
+                        que possam auxiliar no nosso trabalho de acolhimento
+                        e cuidado dos animais. Você pode doar qualquer valor
+                        ou contribuir com insumos como ração, medicamentos e
+                        materiais essenciais.
+                    </p>
+                </div>
+
+                <div class="ajuda-item">
+                    <h3>Divulgação</h3>
+                    <p>
+                        Compartilhar nosso trabalho nas redes sociais ajuda
+                        a alcançar mais pessoas, aumentando as chances de
+                        adoção e apoio. Sua ajuda na divulgação faz muita
+                        diferença.
+                    </p>
+                </div>
+
             </div>
-        </main>
-        <footer id="rodape">
-            <h2>Contato</h2>
-            <nav id="contato">
-                <ul>
-                    <li><a href="">Intagram</a></li>
-                    <li><a href="">Facebook</a></li>
-                    <li><a href="">Whatsapp</a></li>
-                    <li><a href="">X</a></li>
-                    <li>+55 43 9XXXX-XXXX</li>
-                </ul>
-            </nav>
-        </footer>
-    </header>
+        </div>
+
+        <div id="previa-animais">
+            <h2>Animais dispoíveis para doação</h2>
+
+            <section id="animais">
+                <article class="animais-item">
+                    <img src="../images/cachorro01.png" alt="Imagem cachorro">
+                    <h2>Thor</h2>
+                    <article class="info-animal">
+                        <h3>3 meses • Cornélio Procópio</h3>
+                        <a href="">Saiba Mais...</a>
+                    </article>
+                </article>
+
+                <article class="animais-item">
+                    <img src="../images/gato01.jpeg" alt="Imagem Gato">
+                    <h2>Kiara</h2>
+                    <article class="info-animal">
+                        <h3>8 meses • Londrina</h3>
+                        <a href="">Saiba Mais...</a>
+                    </article>
+                </article>
+
+                <article class="animais-item">
+                    <img src="../images/cachorro02.png" alt="Imagem Cachorro">
+                    <h2>Max</h2>
+                    <article class="info-animal">
+                        <h3>1 ano • Curitiba</h3>
+                        <a href="">Saiba Mais...</a>
+                    </article>
+                </article>
+
+                <article class="animais-item">
+                    <img src="../images/gato02.jpeg" alt="Imagem Gato">
+                    <h2>Luna</h2>
+                    <article class="info-animal">
+                        <h3>5 meses • Maringá</h3>
+                        <a href="">Saiba Mais...</a>
+                    </article>
+                </article>
+            </section>
+
+            <div id="btt-mais-animais">
+                <a href="pages/animais.html">Veja mais animais</a>
+            </div>
+        </div>
+    </main>
+    <footer id="rodape">
+        <nav id="contato">
+            <ul>
+                <li><a href="">Carlos Eduardo</a></li>
+                <li><a href="">Felipe Dummer</a></li>
+                <li><a href="">Helder</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
+
 </html>

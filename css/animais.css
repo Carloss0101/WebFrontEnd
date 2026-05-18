@@ -2,10 +2,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #4994A9;
 }
 
-main {
+#main-animais {
+    background-color: #4994A9;
     padding: 20px;
 }
 
