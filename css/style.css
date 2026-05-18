@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -42,6 +44,7 @@ body {
 }
 
 #introducao-texto h2, #formas-de-ajuda h2, #previa-animais > h2 {
+    font-family: "Roboto", sans-serif;
     font-size: 50px;
     margin-bottom: 50px;
 }
@@ -70,6 +73,7 @@ body {
 }
 
 .ajuda-item h3 {
+    font-family: "Roboto", sans-serif;
     font-size: 25px;
     margin-bottom: 15px;
     color: white;
