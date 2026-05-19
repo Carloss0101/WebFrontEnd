@@ -98,3 +98,16 @@ button:hover::before {
 .imagem-login {
     float: left;
 }
+
+p, a { 
+    text-align: center;
+}
+
+a {
+    color: #0E3032; 
+}
+
+a:hover {
+    color: #ffaa00;
+    text-decoration: underline;
+}
