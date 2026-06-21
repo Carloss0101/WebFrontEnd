@@ -7,14 +7,17 @@ body {
     padding: 0;
 }
 
+.menu-container {
+    width: 100%;
+    background-color: #0E3032;
+}
+
 #menu {
     background-color: #0E3032;
     display: flex;
-    color: #ffaa00;
-    padding-left: 30px;
-    padding-right: 45px;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
+    padding: 0 45px; 
 }
 
 #menu a {
@@ -25,6 +28,7 @@ body {
 
 #nome-ong {
     font-family: 'League Spartan', Helvetica, sans-serif;
+    color:#ffaa00
 }
 
 .home-body #menu-nav {
@@ -32,17 +36,17 @@ body {
 }
 
 #menu-nav {
-    background-color: #0E3032;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color:#ffaa00;
-    font-size: large;
+    justify-content: flex-start;
+    gap: 40px; 
+    margin-right: 250px;
+    margin-left: 100px; 
 }
 
 #menu-nav a {
     color: white;
     text-decoration: none;
+    font-size: large;
 }
 
 #menu-nav a:hover {
@@ -155,6 +159,8 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
+    margin-right: 220px;
+    margin-left: 150px;
 }
 
 #contato a {
@@ -164,4 +170,30 @@ body {
 
 #contato a:hover {
     color: #ffaa00;
+}
+
+#tabela-usuarios {
+    list-style-type: none;
+    padding: 0;
+}
+
+#tabela-usuarios li {
+    background-image: url('../images/pawprint.png'); 
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 20px;
+    padding-left: 28px;      
+    margin-bottom: 10px;      
+    line-height: 61px;        
+}
+
+.botao-excluir {
+    background-color: #f70707;
+    color: white;
+    border: none;
+    padding: 2px 8px;
+    font-size: 12px;       
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
 }

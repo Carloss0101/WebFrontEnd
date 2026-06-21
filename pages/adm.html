@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração - Bicholândia</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+<body>
+
+    <header>
+        <div class="menu-container">
+            <div id="menu">
+                <h1 id="nome-ong">Bicholândia</h1>
+                <nav id="menu-nav">
+                    <a href="../index.html">Home</a>
+                    <a href="animais.html">Animais</a>
+                    <a href="../index.html#formas-de-ajuda">Como ajudar</a>
+                </nav>
+                <a href="login.html">Sair</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Cadastro de Usuários - Adm</h1>
+        <div class="card-cadastro">
+            <div class="box2">
+                <form id="form-adm">
+                    <div class="campo-input">
+                        <label for="nome-adm">Nome Completo:</label>
+                    </div>
+                    <input type="text" id="nome-adm" placeholder="Nome do usuário" required>
+                    
+                    <div class="campo-input">
+                        <label for="email-adm">Email:</label>
+                    </div>
+                    <input type="email" id="email-adm" placeholder="E-mail" required>
+                    
+                    <button type="button" onclick="cadastrarUsuario()">Cadastrar</button>
+                    <button type="button" onclick="limparCampos()">Limpar</button>
+                </form>
+            </div>
+        </div>
+
+        <section id="lista-usuarios" style="padding: 20px; text-align: center;">
+            <h2>Usuários Cadastrados</h2>
+            <button type="button" onclick="excluirTodos()" style="background-color: red; color: white; margin-bottom: 10px;">Excluir Todos</button>
+            <ul id="tabela-usuarios"></ul>
+        </section>
+    </main>
+
+    <footer id="rodape">
+        <nav id="contato">
+            <ul>
+                <li><a href="https://carloss0101.github.io/Curriculo/">Carlos Eduardo</a></li>
+                <li><a href="https://feliperdummer.com.br/">Felipe Dummer</a></li>
+                <li><a href="https://helder639.github.io">Helder</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="../js/script-adm.js"></script>
+</body>
+</html>
