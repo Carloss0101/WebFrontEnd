@@ -172,28 +172,53 @@ body {
     color: #ffaa00;
 }
 
+#lista-usuarios {
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+}
+
+#lista-usuarios h2 {
+    color: #0E3032;
+    margin-bottom: 20px;
+}
+
 #tabela-usuarios {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 #tabela-usuarios li {
-    background-image: url('../images/pawprint.png'); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 3px 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    background-image: url('../images/pawprint.png');
     background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 20px 20px;
-    padding-left: 28px;      
-    margin-bottom: 10px;      
-    line-height: 61px;        
+    background-position: 12px center;
+    background-size: 22px;
+    padding-left: 45px;
 }
 
 .botao-excluir {
-    background-color: #f70707;
+    margin-top: 0;
+    align-self: auto;
+    background-color: #e53935;
     color: white;
     border: none;
-    padding: 2px 8px;
-    font-size: 12px;       
-    border-radius: 4px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
     cursor: pointer;
-    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.botao-excluir:hover {
+    background-color: #c62828;
 }
