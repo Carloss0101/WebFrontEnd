@@ -62,6 +62,9 @@ select{
 }
 
 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 11px 45px;
     border-radius: 8px;
     background-color: #ffaa00;
@@ -72,12 +75,9 @@ button {
     margin-top: 14px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 16px; 
-    text-decoration: none;
-    position: relative;        
-    overflow: hidden;          
-    z-index: 1;                
-    transition: color 0.4s;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
 }
 
 button::before {
@@ -98,4 +98,9 @@ button:hover {
 
 button:hover::before {
     bottom: 0;                 
+}
+
+#button-container {
+    display: flex;
+    gap: 5px;
 }
