@@ -20,7 +20,7 @@ function cadastrarUsuario() {
     
     localStorage.setItem('listaUsuarios', JSON.stringify(listaUsuarios));
 
-    renderizarLista();
+    renderizarLista(listaUsuarios);
     limparCampos();
 }
 
@@ -29,11 +29,11 @@ function limparCampos() {
     document.getElementById("email-adm").value = "";
 }
 
-function renderizarLista() {
+function renderizarLista(usuarios) {
     const listaUl = document.getElementById("tabela-usuarios");
     listaUl.innerHTML = ""; 
 
-    const usuarios = JSON.parse(localStorage.getItem('listaUsuarios')) || [];
+    //const usuarios = JSON.parse(localStorage.getItem('listaUsuarios')) || [];
 
     usuarios.forEach((usuario) => {
         const li = document.createElement("li");
@@ -50,7 +50,7 @@ function excluirItem(id) {
         let usuarios = JSON.parse(localStorage.getItem('listaUsuarios')) || [];
         usuarios = usuarios.filter(user => user.id !== id);
         localStorage.setItem('listaUsuarios', JSON.stringify(usuarios));
-        renderizarLista();
+        renderizarLista(usuarios);
     }
 }
 
@@ -65,4 +65,20 @@ function excluirTodos() {
     }
 }
 
-window.onload = renderizarLista;
+function buscarPorCampo() {
+    const usuarios = JSON.parse(localStorage.getItem('listaUsuarios')) || [];
+    //const listaUsers = document.getElementById("tabela-usuarios");
+    //listaUsers.innerHTML = "";
+
+    const filtro = prompt("Digite o filtro desejado (nome ou email):");
+
+    if (filtro!=null && filtro.length!=0) {
+        const opcao = filtro.includes("@") ? "email" : "nome";
+        let usuariosFiltro;
+        usuariosFiltro = usuarios.filter(usuario => (opcao=="email" ? usuario.email : usuario.nome)==filtro);
+        return renderizarLista(usuariosFiltro);
+    }
+    return renderizarLista(usuarios);
+}
+
+window.onload = renderizarLista(JSON.parse(localStorage.getItem('listaUsuarios')) || []);
